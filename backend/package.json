@@ -1,0 +1,33 @@
+{
+  "name": "matadao",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "create-dao": "bash scripts/create-dao.sh",
+    "create-proposal": "bash scripts/create-proposal.sh",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "A server for accessing futarchy-sdk",
+  "dependencies": {
+    "@coral-xyz/anchor": "^0.31.0",
+    "@metadaoproject/futarchy": "^0.4.0-alpha.58",
+    "@metadaoproject/futarchy-sdk": "^4.0.0-alpha.54",
+    "@prisma/client": "^6.5.0",
+    "@solana/spl-token": "^0.4.13",
+    "@solana/web3.js": "^1.98.0",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "prisma": "^6.5.0"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "tsx": "^4.7.1",
+    "typescript": "^5.8.2"
+  }
+}
